@@ -1,0 +1,15 @@
+# Latex generated files
+*.bbl
+*.blg
+*.dvi
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.ps 
+*.pdf
+*.toc
+*.aux
+*.synctex.gz
