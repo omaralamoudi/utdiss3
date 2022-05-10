@@ -14,3 +14,6 @@
 *.aux
 *.synctex.gz
 *.bak
+
+# macos files
+.DS_Store
