@@ -48,3 +48,14 @@ Added a 'Certification' header to the signature page for Master's theses and rep
 the one for PhD dissertations - per the formatting guidelines of UT
 
 
+
+# Using with TexMaker
+
+If you would like to use this package with TexMaker, in a Windows computer, create a new user command that performs the following:
+`latex  -synctex=1 -interaction=nonstopmode %.tex|bibtex %|bibtex %|latex  -synctex=1 -interaction=nonstopmode %.tex|latex  -synctex=1 -interaction=nonstopmode %.tex|makeindex %.idx|latex  -synctex=1 -interaction=nonstopmode %.tex|latex  -synctex=1 -interaction=nonstopmode %.tex|dvips -Pdownload35 -o %.ps %.dvi|ps2pdf %.ps|"C:/Program Files (x86)/Adobe/Acrobat 11.0/Acrobat/Acrobat.exe" %.pdf`
+
+Alternatively, from TexMaker go to `User > User Commands > Edit User Command` and create a command similar to what is shown below.
+
+<center><img src="TexMaker custom quick command.jpg" ...></center>
+<center>TexMaker Quick Build Command Winow</center>
+
