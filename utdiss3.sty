@@ -279,46 +279,47 @@
 
 \newcount\chap@or@app\chap@or@app=1
 
-\def\appendixname{Appendix}
+% { The following was commented out in an attempt to use the appendix package to be able to have chapter specific appendices % [modified by Omar Alamoudi on March 21, 2023]
+% \def\appendixname{Appendix}
 
-\def\appendix{\clearpage
-    \typeout{Appendix.}
-    \short@page					% <- 9/13/96 (MAL)
-        \markboth{}{}\pagestyle{myheadings}	% <- The appendix must 
-        \thispagestyle{plain}			% <- be numbered.
-    \vspace*{\fill}
-    \centerline{\large\bf Appendix}
-    \vspace*{\fill}
+% \def\appendix{\clearpage
+%     \typeout{Appendix.}
+%     \short@page					% <- 9/13/96 (MAL)
+%         \markboth{}{}\pagestyle{myheadings}	% <- The appendix must 
+%         \thispagestyle{plain}			% <- be numbered.
+%     \vspace*{\fill}
+%     \centerline{\large\bf Appendix}
+%     \vspace*{\fill}
 
-    \addcontentsline{toc}{chapter}{Appendix}  % <-
+%     \addcontentsline{toc}{chapter}{Appendix}  % <-
 
-    \setcounter{chapter}{0}
-    \setcounter{section}{0}
-    \def\@chapapp{\appendixname}
-    \chap@or@app=2
-%   \def\thechapter{\Alph{chapter}}}	% Commented out 15 Aug 02	cwm
-					% as a partial solution to
-					% the problem of labeling
-					% one appendix as Appendix A.
-    }
+%     \setcounter{chapter}{0}
+%     \setcounter{section}{0}
+%     \def\@chapapp{\appendixname}
+%     \chap@or@app=2
+% %   \def\thechapter{\Alph{chapter}}}	% Commented out 15 Aug 02	cwm
+% 					% as a partial solution to
+% 					% the problem of labeling
+% 					% one appendix as Appendix A.
+%     }
 
-\def\appendices{\clearpage
-    \typeout{Appendices.}
-    \short@page \setcounter{regular@short}{1}	% <- 9/13/96 (MAL)
-        \markboth{}{}\pagestyle{myheadings}	% <- The appendices must
-        \thispagestyle{plain}			% <- be numbered.
-    \vspace*{\fill}
-    \centerline{\large\bf Appendices}
-    \vspace*{\fill}
+% \def\appendices{\clearpage
+%     \typeout{Appendices.}
+%     \short@page \setcounter{regular@short}{1}	% <- 9/13/96 (MAL)
+%         \markboth{}{}\pagestyle{myheadings}	% <- The appendices must
+%         \thispagestyle{plain}			% <- be numbered.
+%     \vspace*{\fill}
+%     \centerline{\large\bf Appendices}
+%     \vspace*{\fill}
 
-    \addcontentsline{toc}{chapter}{Appendices}	% <-
+%     \addcontentsline{toc}{chapter}{Appendices}	% <-
 
-    \setcounter{chapter}{0}
-    \setcounter{section}{0}
-    \def\@chapapp{\appendixname}
-    \chap@or@app=2
-    \def\thechapter{\Alph{chapter}}}
-
+%     \setcounter{chapter}{0}
+%     \setcounter{section}{0}
+%     \def\@chapapp{\appendixname}
+%     \chap@or@app=2
+%     \def\thechapter{\Alph{chapter}}}
+% }
 
 % Redefinition of \@part for using by \part (M.A.L.)
 %
